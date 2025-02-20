@@ -2,7 +2,7 @@ import "./OnScreenKeyboard.css";
 import React from 'react';
 
 interface Props {
-  variableClass: string;
+  variableClass?: string;
   content: string;
   children: React.ReactNode;
 }

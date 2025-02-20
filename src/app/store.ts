@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { DoorCodeReducer } from '../Containers/DoorCode/DoorCodeSlice.ts';
+import { doorCodeReducer } from '../Containers/DoorCode/DoorCodeSlice.ts';
+import { calculatorReducer } from '../Containers/Calculator/CalculatorSlice.ts';
 
 export const store = configureStore({
   reducer: {
-    doorCode: DoorCodeReducer,
+    doorCode: doorCodeReducer,
+    calculator: calculatorReducer,
   }
 });
 

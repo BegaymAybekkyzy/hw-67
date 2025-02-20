@@ -19,7 +19,7 @@ const initialState:  DoorCodeState = {
 };
 
 export const doorCodeSlice = createSlice({
-  name: "OnScreenKeyboard",
+  name: "DoorCode",
   initialState,
   reducers: {
     verification: (state, action: PayloadAction<number | string>) => {
@@ -50,10 +50,9 @@ export const doorCodeSlice = createSlice({
           state.displayContent = "Access Denied";
         }
       }
-
     }
   }
 });
 
-export const  DoorCodeReducer =    doorCodeSlice.reducer;
-export const {verification} =   doorCodeSlice.actions;
+export const doorCodeReducer = doorCodeSlice.reducer;
+export const {verification} = doorCodeSlice.actions;
