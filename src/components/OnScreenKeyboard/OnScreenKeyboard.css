@@ -1,0 +1,43 @@
+.block {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 40px auto 0;
+}
+
+.window {
+  width: 95%;
+  height: 20%;
+  padding: 5px;
+  margin: 0 auto 10px;
+  border: 1px solid gray;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.correct {
+  background-color: darkseagreen;
+}
+
+.incorrect {
+  background-color: indianred;
+}
+
+.content {
+  display: block;
+  font-size: 20px;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+}
+
+.keyboard button {
+  display: block;
+  height: 50px;
+  font-size: 20px;
+}
